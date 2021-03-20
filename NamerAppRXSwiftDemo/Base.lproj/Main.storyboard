@@ -73,8 +73,56 @@
             </objects>
             <point key="canvasLocation" x="125" y="82"/>
         </scene>
+        <!--Add New NameVC-->
+        <scene sceneID="mPd-6R-IRK">
+            <objects>
+                <viewController storyboardIdentifier="AddNewNameVC" id="CDE-pG-ptv" customClass="AddNewNameVC" customModule="NamerAppRXSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xXj-fA-cKV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Okg-j0-gKi">
+                                <rect key="frame" x="20" y="144" width="374" height="90"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter new name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hw6-WA-C7R">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbG-6y-66Y">
+                                        <rect key="frame" x="0.0" y="60" width="374" height="30"/>
+                                        <state key="normal" title="Add New Name">
+                                            <color key="titleColor" systemColor="linkColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="1Vk-rM-iDw"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="1Vk-rM-iDw" firstAttribute="trailing" secondItem="Okg-j0-gKi" secondAttribute="trailing" constant="20" id="007-Su-PVM"/>
+                            <constraint firstItem="Okg-j0-gKi" firstAttribute="leading" secondItem="1Vk-rM-iDw" secondAttribute="leading" constant="20" id="RQ8-38-hNL"/>
+                            <constraint firstItem="Okg-j0-gKi" firstAttribute="top" secondItem="1Vk-rM-iDw" secondAttribute="top" constant="100" id="xLY-Yl-0mX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addNewNameBtn" destination="fbG-6y-66Y" id="DpZ-de-fqH"/>
+                        <outlet property="newNameTF" destination="Hw6-WA-C7R" id="qeQ-bt-VwJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UfB-tq-0Tu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="82"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
