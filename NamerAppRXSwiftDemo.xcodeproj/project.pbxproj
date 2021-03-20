@@ -77,11 +77,11 @@
 				CE42577E2605D45500BBE2D9 /* AppDelegate.swift */,
 				CE4257802605D45500BBE2D9 /* SceneDelegate.swift */,
 				CE4257822605D45500BBE2D9 /* HomeVC.swift */,
+				CE4257992606282400BBE2D9 /* AddNewNameVC.swift */,
 				CE4257842605D45500BBE2D9 /* Main.storyboard */,
 				CE4257872605D45800BBE2D9 /* Assets.xcassets */,
 				CE4257892605D45800BBE2D9 /* LaunchScreen.storyboard */,
 				CE42578C2605D45800BBE2D9 /* Info.plist */,
-				CE4257992606282400BBE2D9 /* AddNewNameVC.swift */,
 			);
 			path = NamerAppRXSwiftDemo;
 			sourceTree = "<group>";
